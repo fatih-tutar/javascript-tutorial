@@ -3,10 +3,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Javascript</title>
 </head>
 <body>
-    <h1>Javascript Tutorial</h1>
-    <script src="js/19_dom_intro.js" type="text/Javascript"></script>
+    <div class="container p-3 bg-secondary">
+        <h1 class="app-title" id="header">Shopping List</h1>
+        <div class="card">
+            <div class="card-header">New Item</div>
+            <div class="card-body">
+                <form action="" id="addTaskForm">
+                    <div class="input-group mt-3">
+                        <input type="text" id="txtTaskName" class="form-control" placeholder="New...">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit" id="btnAddNewTask">
+                                <i class="fa-solid fa-square-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>     
+        <div class="card mt-3">
+            <div class="card-header">
+                To Buy List
+                <a href="#" id="btnDeleteAll" class="btn btn-outline-danger btn-sm float-right">Delete All</a>
+            </div>
+            <ul id="task-list" class="list-group">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>   
+    </div>
+
+
+    <script src="js/21_single_element.js" type="text/Javascript"></script>
 </body>
 </html>
