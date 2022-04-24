@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Javascript</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            border:5px solid #ddd;
+            margin-top: 10px;
+        }
+        th{
+            border:1px solid #ddd;
+        }
+        td{
+            border:1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
+    <button id="getInfo">Get Information</button>
+    <button id="getAllInfos">Get All Informations</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
     <div class="container">
         <div class="redBox"></div>
         <div class="greenBox"></div>
@@ -85,5 +113,6 @@
     </div>
 
     <script src="js/51_ajax_xhr_object.js" type="text/Javascript"></script>
+    <script src="js/50_synch_asynch.js" type="text/Javascript"></script>
 </body>
 </html>
